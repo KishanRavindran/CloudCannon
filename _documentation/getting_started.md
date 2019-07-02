@@ -37,14 +37,12 @@ left_code_blocks:
   - code_block:
     title:
     language:
-  - code_block: |2-
-       $.get("http://api.myapp.com/books/", { "token": "YOUR_APP_KEY"}, function(data) {
-         alert(data);
-       });
-    title: Js
-    language: javascript
 right_code_blocks:
-  - code_block:
-    title:
-    language:
+  - code_block: |-
+      <app-header-language></app-header-language>
+      <app-header></app-header>
+      <router-outlet></router-outlet>
+      <app-footer *ngIf="headerFooter"></app-footer>
+    title: Js
+    language: html
 ---
